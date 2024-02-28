@@ -1,0 +1,12 @@
+import {MongoClient} from "mongodb";
+
+const uri = "mongodb://localhost:27017"
+const client = MongoClient.connect(uri, {useNewUrlParsesr: true}, function(err,db) {
+	if (err) {
+		console.log(err);
+		throw err;
+	}
+	const dbo = db;
+});
+
+export default db;

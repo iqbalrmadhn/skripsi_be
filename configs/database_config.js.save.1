@@ -1,0 +1,8 @@
+import {MongoClient} from "mongodb";
+
+const uri = "mongodb://localhost:27017"
+export const client = MongoClient.connect(uri, function (err,client) {
+try {
+	console.log("connected to DB....")
+	db = 
+catch (err) { console.log("failed to connect ", err)}
